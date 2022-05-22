@@ -1,0 +1,76 @@
+body{
+    background-image: url(bg1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.wrapper{
+    color: black;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 4px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 8px 32px 0 rgba(31,38,135,0.37);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+#seconds, #tens{
+    font-size: 2em;
+}
+button{
+    border-radius: 5px;
+    background: #0c4691;
+    color: #fff;
+    cursor: pointer;
+    padding: 7px;
+    width: 100px;
+    margin: 10px;
+    outline: none;
+    border: none;
+    transition: all 0.2 ease-in-out;
+}
+
+button:hover{
+    background-color: transparent;
+    color: black;
+}
+.button1{
+    padding: 7px;
+    width: 100px;
+    animation: bounce 4s infinite;
+    border: none;
+    cursor: pointer;
+}
+@keyframes bounce{
+    5%,
+    50%{
+        transform: scale(1);
+    }
+    10%{
+        transform: scale(1);
+    }
+    15%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1) rotate(-5deg);
+    }
+    25%{
+        transform: scale(1) rotate(5deg);
+    }
+    30%{
+        transform: scale(1) rotate(-3deg);
+    }
+    35%{
+        transform: scale(1) rotate(2deg);
+    }
+    40%{
+        transform: scale(1) rotate(0);
+    }
+}
